@@ -1,0 +1,20 @@
+#logo {
+    background-image: url(images/halie-west-25xggax4bSA-unsplash.jpg
+    );
+}
+
+.intro-text {
+    border: 1px solid black;
+}
+
+#name {
+    background-color: lightblue;
+}
+
+#email {
+    background-color: lightcoral;
+}
+
+#user-password {
+    background-color: lightyellow;
+}
