@@ -9,7 +9,7 @@
 </head>
 <body>
     <div class="image">
-        <div class="logo"></div>
+        <img src="images/halie-west-25xggax4bSA-unsplash.jpg" alt="">
     </div>
     <div class="sign-up">
         <div class="intro-text">
@@ -19,22 +19,38 @@
         <div class="form">
             <form action="">
                 <div class="form-bar" id="name">
-                    <label for="first-name">FIRST NAME</label>
-                    <input type="text" id="first-name" name="first-name">
-                    <label for="last-name">LAST NAME</label>
+                    <div class="form-input">
+                        <label for="first-name">FIRST NAME</label>
+                        <input type="text" id="first-name" name="first-name">
+                    </div>
+                    <label for="form-input">LAST NAME</label>
                     <input type="text" id="last-name" name="last-name">
                 </div>
                 <div class="form-bar" id="email">
-                    <label for="user-email">EMAIL</label>
-                    <input type="email" id="user-email" name="user-email">
-                    <label for="phone-number">PHONE NUMBER</label>
-                    <input type="tel" id="phone-number" name="phone-number">
+                    <div class="form-input">
+                        <label for="user-email">EMAIL</label>
+                        <input type="email" id="user-email" name="user-email">
+                    </div>
+                    <div class="form-input">
+                        <label for="phone-number">PHONE NUMBER</label>
+                        <input type="tel" id="phone-number" name="phone-number">
+                    </div>
                 </div>
                 <div class="form-bar" id="user-password">
-                    <label for="user-password">PASSWORD</label>
-                    <input type="password" id="user-password" name="user-password">
+                    <div class="form-input">
+                        <label for="user-password">PASSWORD</label>
+                        <input type="password" id="user-password" name="user-password">
+                    </div>
+                    <div class="form-input">
+                        <label for="confirm-password">CONFIRM PASSWORD</label>
+                        <input type="password" id="confirm-password" name="confirm-password">
+                    </div>
                 </div>
             </form>
+        </div>
+        <div>
+            <button type="submit">Create Account</button>
+            <p>Already have an account? <a href="#">Log in</a></p>
         </div>
     </div>
 </body>
