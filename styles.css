@@ -156,13 +156,20 @@ body {
 }
 
 .intro-text>p {
-	font-size: 1.5rem;
+	font-size: 1.3rem;
+	margin-top: 5rem;
+	margin-bottom: 1rem;
+	width: min(600px, 100%);
+}
+
+.form>p {
+	font-size: 1.3rem;
 	margin-bottom: 1rem;
 }
 
 .intro-text,
 .login {
-	background-color: whitesmoke;
+	background-color: rgba(249, 250, 251, 255);
 }
 
 .intro-text {
@@ -172,9 +179,9 @@ body {
 }
 
 div.form {
-	background-color: lightgrey;
+	background-color: rgba(255, 255, 255, 255);
 	padding: 1rem 0 1rem 50px;
-	
+
 }
 
 .form-bar {
@@ -189,6 +196,10 @@ div.form {
 	padding: 0 1rem 1rem 0;
 }
 
+.form-input>label {
+	font-size: 0.7rem;
+}
+
 div.login {
 	padding: 25px 0 0 50px;
 	display: flex;
@@ -196,16 +207,15 @@ div.login {
 	flex-grow: 1;
 }
 
-div.login > button {
+div.login>button {
 	width: fit-content;
 	margin-bottom: 1rem;
 }
 
-
 /* 
 Goals:
 Add logo
-Use min() or max() to improve responsiveness.
+Use min() or max() to improve responsiveness. DONE?
 Style links
 Style button
 Credit image
