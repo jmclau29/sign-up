@@ -210,6 +210,7 @@ div#logo-bar {
 .form>p {
 	font-size: 1.3rem;
 	margin-bottom: 1rem;
+	padding: 1rem 0 1rem 50px;
 }
 
 .intro-text,
@@ -223,10 +224,21 @@ div#logo-bar {
 	padding: 50px;
 }
 
-div.form {
+div.form-block {
 	background-color: rgba(255, 255, 255, 255);
 	padding: 1rem 0 1rem 50px;
+}
 
+div#form-button {
+	background-color: rgba(249, 250, 251, 255);
+	padding: 1rem 0 1rem 50px;
+}
+
+div#form-button > button {
+	width: fit-content;
+	margin-bottom: 1rem;
+	background-color: #265301;
+	color: #E5E7EB;
 }
 
 .form-bar {
@@ -255,19 +267,18 @@ div.form {
 	font-size: 1rem;
 }
 
+input:focus {
+	outline: 1px solid blue;
+	box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+}
 
-div.login {
-	padding: 25px 0 0 50px;
+.login {
+	padding: 1rem 0 0 50px;
 	display: flex;
 	flex-direction: column;
 	flex-grow: 1;
+	font-size: 1.3rem;
 }
-
-div.login>button {
-	width: fit-content;
-	margin-bottom: 1rem;
-}
-
 
 a {
 	outline: none;
@@ -286,5 +297,5 @@ Add logo DONE
 Use min() or max() to improve responsiveness. DONE? Not done but eh
 Style links
 Style button
-Credit image
+Credit image DONE
 */
