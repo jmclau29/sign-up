@@ -107,9 +107,9 @@ section {
 	display: block;
 }
 
-body {
+/* body {
 	line-height: 1;
-}
+} */
 
 ol,
 ul {
@@ -154,6 +154,31 @@ div#logo-bar {
 	background-repeat: no-repeat;
 	background-size: cover;
 	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#title	{
+	display: flex;
+    flex-direction: row;
+	flex-wrap: wrap;
+    background-color: rgba(0, 0, 0, 0.282);
+    align-items: center;
+    justify-content: center;
+    margin-top: 15vh;
+    width: 30vw;
+}
+
+#logo-bar > #footer {
+	margin-top: auto;
+	margin-bottom: 0px;
+	font-size: 1.2rem;
+	color: #E5E7EB;
+	background-color: rgba(0, 0, 0, 0.282);
+	width: 30vw;
+	display: flex;
+	justify-content: center;
+	
 }
 
 
@@ -166,8 +191,6 @@ div#logo-bar {
 	font-family: norse-bold;
 	font-size: 7rem;
 	color: #E5E7EB;
-	background-color: rgba(0, 0, 0, 0.199);
-	margin: 20vh;
 }
 
 .sign-up {
@@ -259,8 +282,8 @@ a:link {
 
 /* 
 Goals:
-Add logo
-Use min() or max() to improve responsiveness. DONE?
+Add logo DONE
+Use min() or max() to improve responsiveness. DONE? Not done but eh
 Style links
 Style button
 Credit image
