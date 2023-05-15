@@ -167,6 +167,7 @@ div#logo-bar {
     justify-content: center;
     margin-top: 15vh;
     width: 30vw;
+	padding: 2rem 0;
 }
 
 #logo-bar > #footer {
@@ -183,7 +184,7 @@ div#logo-bar {
 
 
 #odin-logo {
-	width: 40%;
+	width: 25%;
 	height: auto;
 }
 
@@ -191,6 +192,7 @@ div#logo-bar {
 	font-family: norse-bold;
 	font-size: 7rem;
 	color: #E5E7EB;
+	padding-left: 1rem;
 }
 
 .sign-up {
@@ -264,12 +266,16 @@ div#form-button > button {
 .form-input>input[type='password'] {
 	border: 1px solid #E5E7EB;
 	border-radius: 4px;
-	font-size: 1rem;
+	font-size: 1.5rem;
 }
 
 input:focus {
 	outline: 1px solid blue;
 	box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+}
+
+input[type='password']:invalid {
+	outline: 1px solid red;
 }
 
 .login {
