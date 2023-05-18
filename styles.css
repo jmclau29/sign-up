@@ -255,15 +255,15 @@ div#form-button > button {
 	padding: 0 1rem 1rem 0;
 }
 
-.form-input>label {
+label {
 	font-size: 0.7rem;
 	margin-bottom: 0.2rem;
 }
 
-.form-input>input[type='text'],
-.form-input>input[type='email'],
-.form-input>input[type='tel'],
-.form-input>input[type='password'] {
+input[type='text'],
+input[type='tel'],
+input[type='email'],
+input[type='password'] {
 	border: 1px solid #E5E7EB;
 	border-radius: 4px;
 	font-size: 1.5rem;
@@ -272,10 +272,6 @@ div#form-button > button {
 input:focus {
 	outline: 1px solid blue;
 	box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
-}
-
-input[type='password']:invalid {
-	outline: 1px solid red;
 }
 
 .login {
@@ -295,6 +291,9 @@ a {
 
 a:link {
 	color: #265301;
+}
+.error:invalid {
+	outline: 1px solid red;
 }
 
 /* 
