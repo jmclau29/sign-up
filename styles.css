@@ -146,7 +146,7 @@ body {
 	flex-direction: row;
 }
 
-div#logo-bar {
+div#left-side {
 	background-image: url("images/halie-west-25xggax4bSA-unsplash.jpg");
 	height: 100vh;
 	width: 30vw;
@@ -170,7 +170,7 @@ div#logo-bar {
 	padding: 2rem 0;
 }
 
-#logo-bar > #footer {
+#left-side > #footer {
 	margin-top: auto;
 	margin-bottom: 0px;
 	font-size: 1.2rem;
@@ -182,7 +182,6 @@ div#logo-bar {
 	
 }
 
-
 #odin-logo {
 	width: 25%;
 	height: auto;
@@ -193,6 +192,12 @@ div#logo-bar {
 	font-size: 7rem;
 	color: #E5E7EB;
 	padding-left: 1rem;
+}
+
+.right-side	{
+	display: flex;
+	flex-direction: column;
+	font-family: 'Courier New', Courier, monospace;
 }
 
 .sign-up {
@@ -209,12 +214,6 @@ div#logo-bar {
 	width: min(600px, 100%);
 }
 
-.form>p {
-	font-size: 1.3rem;
-	margin-bottom: 1rem;
-	padding: 1rem 0 1rem 50px;
-}
-
 .intro-text,
 .login {
 	background-color: rgba(249, 250, 251, 255);
@@ -226,81 +225,48 @@ div#logo-bar {
 	padding: 50px;
 }
 
-div.form-block {
-	background-color: rgba(255, 255, 255, 255);
-	padding: 1rem 0 1rem 50px;
+form#form {
+	margin-top: 50px;
 }
 
-div#form-button {
-	background-color: rgba(249, 250, 251, 255);
-	padding: 1rem 0 1rem 50px;
-}
-
-div#form-button > button {
-	width: fit-content;
-	margin-bottom: 1rem;
-	background-color: #265301;
-	color: #E5E7EB;
-}
-
-.form-bar {
+form > .form-row {
 	display: flex;
 	flex-direction: row;
-
 }
-
-.form-input {
+form > div > div {
 	display: flex;
 	flex-direction: column;
-	padding: 0 1rem 1rem 0;
+	margin: 0 50px 20px 50px;
 }
 
 label {
-	font-size: 0.7rem;
-	margin-bottom: 0.2rem;
+	font-size: 0.95rem;
+	margin-bottom: 5px;
 }
 
-input[type='text'],
-input[type='tel'],
-input[type='email'],
-input[type='password'] {
-	border: 1px solid #E5E7EB;
-	border-radius: 4px;
-	font-size: 1.5rem;
+input {
+	border: 1px solid #e5e7eb;
+	height: 1.2rem;
+	border-radius: 5px;
 }
 
-input:focus {
-	outline: 1px solid blue;
-	box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+#submit-button {
+	margin: 50px 0 0 50px;
+
+	font-size: 1rem;
+	background-color: #596d48;
+	color: white;
+	border: none;
+	border-radius: 5px;
+	height: 2rem;
 }
 
-.login {
-	padding: 1rem 0 0 50px;
-	display: flex;
-	flex-direction: column;
-	flex-grow: 1;
-	font-size: 1.3rem;
+#login {
+	margin-left: 50px;
+	margin-top: 3rem;
 }
 
 a {
-	outline: none;
-
+	color: #596d48;
 	text-decoration: none;
-	padding: 2px 1px 0;
 }
-
-a:link {
-	color: #265301;
-}
-.error:invalid {
-	outline: 1px solid red;
-}
-
-/* 
-Goals:
-Add logo DONE
-Use min() or max() to improve responsiveness. DONE? Not done but eh
-Style links
-Style button
-Credit image DONE
-*/

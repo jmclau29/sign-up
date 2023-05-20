@@ -11,7 +11,7 @@
 
 <body>
 
-    <div id="logo-bar">
+    <div id="left-side">
         <div id="title">
             <img id="odin-logo" src="images/odin-lined.png" alt="Odin">
             <p id="logo-title">ODIN</p>
@@ -22,55 +22,47 @@
         </div>
     </div>
 
-    <div class="sign-up">
+    <div class="right-side">
         <div class="intro-text">
             <p>This is not a real online service! You know you need something like this in your life to help you realize
                 your deepest dreams. Sign up <em>now</em> to get started.</p>
             <p>You <em>know</em> you want to.</p>
         </div>
-        <div class="form">
-            <p>Let's do this!</p>
-            <form>
-                <div class="form-block">
-                    <div class="form-bar" id="name">
-                        <div class="form-input">
-                            <label for="first-name">FIRST NAME</label>
-                            <input type="text" id="first-name" name="first-name">
-                        </div>
-                        <div class="form-input">
-                            <label for="last-name">LAST NAME</label>
-                            <input type="text" id="last-name" name="last-name">
-                        </div>
-                    </div>
-                    <div class="form-bar" id="email">
-                        <div class="form-input">
-                            <label for="user-email">EMAIL</label>
-                            <input type="email" id="user-email" name="user-email">
-                        </div>
-                        <div class="form-input">
-                            <label for="phone-number">PHONE NUMBER</label>
-                            <input type="tel" id="phone-number" name="phone-number">
-                        </div>
-                    </div>
-                    <div class="form-bar" id="user-password">
-                        <div class="form-input">
-                            <label for="user-password">PASSWORD</label>
-                            <input type="password" class="error" id="user-password" name="user-password" required />
-                        </div>
-                        <div class="form-input">
-                            <label for="confirm-password">CONFIRM PASSWORD</label>
-                            <input type="password" class="error" id="confirm-password" name="confirm-password" required />
-                        </div>
-                    </div>
+        
+        <form id="form" action="/" method="get">
+            <div class="form-row">
+                <div>
+                    <label for="first-name">First Name</label>
+                    <input id="first-name" type="text" minlength="2">
                 </div>
-                <div id="form-button">
-                    <button type="submit" onclick="verifyPassword()">Create Account</button>
+                <div>
+                    <label for="last-name">Last Name</label>
+                    <input id="last-name" type="text" minlength="2">
                 </div>
-            </form>
-        </div>
-        <div class="login">
-            <p>Already have an account? <a href="#">Log in</a></p>
-        </div>
+            </div>
+            <div class="form-row">
+                <div>
+                    <label for="email">Email</label>
+                    <input id="email" type="email">
+                </div>
+                <div>
+                    <label for="phone">Phone number</label>
+                    <input id="phone" type="number">
+                </div>
+            </div>
+            <div class="form-row">
+                <div>
+                    <label for="password">Password</label>
+                    <input id="password" type="password" minlength="8" placeholder="greater than 8 characters." required>
+                </div>
+                <div>
+                    <label for="confirm-password">Confirm Password</label>
+                    <input id="confirm-password" type="password" minlength="8" placeholder="greater than 8 characters." required onkeyup="verifyPassword()">
+                </div>
+            </div>
+            <button id="submit-button" type="submit">Create Account</button>
+            <p id="login">Already have an account? <a href="https://youtu.be/9bZkp7q19f0">Login</a>.</p>
+        </form>
     </div>
 </body>
 
