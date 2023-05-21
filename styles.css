@@ -172,10 +172,11 @@ div#left-side {
 
 #left-side > #footer {
 	margin-top: auto;
-	margin-bottom: 0px;
+	margin-bottom: 5px;
+	font-family: 'Courier New', Courier, monospace;
 	font-size: 1.2rem;
 	color: #E5E7EB;
-	background-color: rgba(0, 0, 0, 0.282);
+	font-size: 1rem;
 	width: 30vw;
 	display: flex;
 	justify-content: center;
@@ -256,14 +257,22 @@ input:focus {
 	border: 1px solid blue;
 	height: 1.2rem;
 	border-radius: 5px;
+	box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
 }
 
-input:invalid:required {
+input:invalid {
 	outline: none;
 	border: 1px solid red;
 	height: 1.2rem;
 	border-radius: 5px;
 }
+
+div#cpwmessage {
+	margin-top: 5px;
+	font-size: 0.8rem;
+	color: red;
+}
+
 
 #submit-button {
 	margin: 50px 0 0 50px;
@@ -284,6 +293,11 @@ input:invalid:required {
 a {
 	color: #596d48;
 	text-decoration: none;
+}
+
+p#credit > a {
+	color: #E5E7EB;
+	text-decoration: underline;
 }
 
 

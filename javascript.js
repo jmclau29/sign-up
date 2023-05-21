@@ -4,12 +4,12 @@ function verifyPassword() {
     const confirmPassword = document.getElementById('confirm-password');
 
     if (password.value != confirmPassword.value) {
-        confirmPassword.setCustomValidity("Password doesn't match.")
-        confirmPassword.className('error')
+        document.getElementById('cpwmessage').innerHTML = "* Password does not match.";
         return false;
     } else if (password.value === confirmPassword.value) {
-        confirmPassword.setCustomValidity("");
-        confirmPassword.className('')
+        document.getElementById('cpwmessage').innerHTML = "";
         return true;
     }
 }
+
+document.getElementById('')
