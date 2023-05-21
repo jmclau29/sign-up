@@ -245,7 +245,22 @@ label {
 }
 
 input {
+	outline: none;
 	border: 1px solid #e5e7eb;
+	height: 1.2rem;
+	border-radius: 5px;
+}
+
+input:focus {
+	outline: none;
+	border: 1px solid blue;
+	height: 1.2rem;
+	border-radius: 5px;
+}
+
+input:invalid:required {
+	outline: none;
+	border: 1px solid red;
 	height: 1.2rem;
 	border-radius: 5px;
 }
@@ -270,3 +285,6 @@ a {
 	color: #596d48;
 	text-decoration: none;
 }
+
+
+
